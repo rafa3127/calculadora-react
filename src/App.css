@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg{
+  background-color: rgb(2, 79, 2);
+  background-image: url("https://c.wallhere.com/photos/74/f4/3840x2160_px_forest_landscape_mountains_Ultra_HD-1420901.jpg!d");
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.calculadora{
+  background: linear-gradient(155deg, rgba(0,166,166,0.2) 0%, rgba(13,170,170,0.4) 28%, rgba(255,255,255,0.5) 35%, rgba(15,171,171,0.4) 43%, rgba(0,166,166,0.2) 50%, rgba(255,255,255,0.5) 59%, rgba(0,166,166,0.4) 69%, rgba(0,166,166,0.4) 100%);
+  margin: auto;
+  height: 75vh;
+  width: 54vh;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31);
+  padding: 25px;
+  margin: 10px;
+  text-align: right;
+  color: rgb(161, 160, 160);
+  font-size: 40px;
 }
+
+.numberButtons{
+  grid-column: 1/4;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 10px;
+}
+
+.number{
+  border-radius: 50%;
+  border-bottom: rgb(190, 187, 187) solid 5px;
+  border-right: rgb(190, 187, 187) solid 3px;
+  transition: all 0.1s ease-in-out;
+  background-color: rgba(255, 255, 255,0.8);
+  color: rgba(63, 62, 62, 0.85);
+  font-size: 15px;
+
+}
+
+.number:hover{
+  border: none
+}
+
+.cero{
+  grid-column: 2/3;
+  border-radius: 100px;
+}
+
+.operators{
+  grid-column: 4/5;
+  grid-row: 2/7;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.operator{
+  border-radius: 50%;
+  border-bottom: rgb(161, 91, 0) solid 5px;
+  border-right: rgb(161, 91, 0) solid 3px;
+  transition: all 0.1s ease-in-out;
+  background-color: rgba(255, 148, 7, 0.8);
+  color: rgba(63, 62, 62, 0.85);
+  font-size: 15px;
+}
+
+.operator:hover{
+  border: none;
+}
+
+.functionButtons{
+  grid-column: 1/4;
+  grid-row: 6/7;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  margin: 10px;
+}
+
+.funct{
+  border-radius: 100px;
+  border-bottom: rgb(0, 91, 105) solid 5px;
+  border-right: rgb(0, 91, 105) solid 3px;
+  transition: all 0.1s ease-in-out;
+  background-color: rgba(0, 199, 230, 0.8);
+  color: rgba(63, 62, 62, 0.85);
+  font-size: 15px;
+  height: 100%;
+}
+
+.funct:hover{
+  border:none
+}
+
+
