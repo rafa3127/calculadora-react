@@ -26,9 +26,10 @@ code {
 .calculadora{
   background: linear-gradient(155deg, rgba(0,166,166,0.2) 0%, rgba(13,170,170,0.4) 28%, rgba(255,255,255,0.5) 35%, rgba(15,171,171,0.4) 43%, rgba(0,166,166,0.2) 50%, rgba(255,255,255,0.5) 59%, rgba(0,166,166,0.4) 69%, rgba(0,166,166,0.4) 100%);
   margin: auto;
-  height: 75vh;
-  width: 54vh;
-  max-width: 400px;
+  height: 70vh;
+  width: 45vh;
+  max-width: 90%;
+  max-height: 90%;
   padding: 10px;
   border-radius: 30px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
